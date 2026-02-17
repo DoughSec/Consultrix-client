@@ -4,7 +4,7 @@ export default function StudentLayout({ children }) {
     return (
         <div className="flex">
             <SideBar />
-            <main>{children}</main>
+            <main className="p-12">{children}</main>
         </div>
     )
 }
