@@ -4,8 +4,8 @@ import LoginForm from '@/components/auth/LoginForm';
 export default function LoginPage() {
     return (
         <div className="flex min-h-screen items-center justify-center p-6 bg-black">
-            <div className="grid h-[calc(100dvh-25rem)] w-full max-w-6xl grid-cols-2 overflow-hidden rounded-3xl shadow-2xl border-2 border-white/20">
-                <section className="relative overflow-hidden hidden md:block">
+            <div className="grid h-[calc(100dvh-25rem)] w-full max-w-6xl overflow-hidden rounded-3xl shadow-2xl md:grid-cols-2">
+                <section className="relative hidden overflow-hidden bg-slate-950 md:block">
                     <LightPillar
                         className="z-0"
                         topColor="#5227FF"
