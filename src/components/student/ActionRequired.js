@@ -1,4 +1,4 @@
-import GlassCard from "./GlassCard";
+import GlassCard from "../GlassCard";
 import ActionItem from "./ActionItem";
 import { LuBadgeInfo } from "react-icons/lu";
 

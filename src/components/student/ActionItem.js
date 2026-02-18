@@ -1,4 +1,4 @@
-import GlassCard from "./GlassCard";
+import GlassCard from "@/components/GlassCard";
 
 const INTENT_STYLES = {
   warning: {

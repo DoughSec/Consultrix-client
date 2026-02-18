@@ -1,6 +1,7 @@
 import StatsCardList from "@/components/StatsCardList";
 import SectionHeader from "@/components/SectionHeader";
-import ActionRequired from "@/components/ActionRequired";
+import ActionRequired from "@/components/student/ActionRequired";
+import CourseProgress from "@/components/student/CourseProgress";
 
 import { LuBadgeInfo, LuAlarmClock } from "react-icons/lu";
 
@@ -33,11 +34,26 @@ export default function StudentDashboard() {
                 subtitle="Here's your learning progress and upcoming activities"
             />
 
-            {/* quick stats sections */}
-            <StatsCardList />
+            <section className="grid grid-cols-1 gap-4 md:grid-cols-8">
 
-            {/* Required Actions Section */}
-            <ActionRequired items={actionItems} />
+                <div className="md:col-span-8">
+                    {/* quick stats sections */}
+                    <StatsCardList />
+                </div>
+
+                <div className="md:col-span-7">
+                    {/* Required Actions Section */}
+                    <ActionRequired items={actionItems} />
+                </div>
+
+                <div className="md:col-span-7">
+                    {/* Course Progress section */}
+                    <CourseProgress />
+                </div>
+
+            </section>
+
+
 
         </div>
     )
