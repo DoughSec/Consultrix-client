@@ -11,8 +11,8 @@ const courseData = [
 
 const CourseProgress = () => {
     return (
-        <section className="grid grid-cols-3">
-            <GlassCard className="col-span-2">
+        <section className="">
+            <GlassCard className="">
                 <h2 className="font-bold">Course Progress</h2>
 
                 {courseData.map((item, _) => <CourseProgressBar data={item} key={_} />)}
