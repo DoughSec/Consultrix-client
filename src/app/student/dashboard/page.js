@@ -5,6 +5,7 @@ import CourseProgress from "@/components/student/CourseProgress";
 import UpcomingSection from "@/components/student/UpcomingSection";
 import AnnouncementSection from "@/components/student/AnnouncementSection";
 import FeedBackSection from "@/components/student/FeedbackSection";
+import QuickActionsSection from "@/components/student/QuickActionsSection";
 
 export default function StudentDashboard() {
     return (
@@ -37,6 +38,7 @@ export default function StudentDashboard() {
                 <div className="md:col-span-3 flex flex-col gap-4">
                     <UpcomingSection />
                     <AnnouncementSection />
+                    <QuickActionsSection />
                 </div>
 
             </section>

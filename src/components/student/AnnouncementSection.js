@@ -1,3 +1,4 @@
+import CardHeader from "../CardHeader";
 import GlassCard from "../GlassCard";
 import ActionItem from "./ActionItem";
 
@@ -24,7 +25,7 @@ const announcementData = [
 const AnnouncementSection = () => {
     return (
         <GlassCard className='overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
-            <h2 className="font-bold">Announcements</h2>
+            <CardHeader title="Announcements" />
             {announcementData.map(item => {
                 return (
                     <ActionItem
