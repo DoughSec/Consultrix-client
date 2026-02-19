@@ -3,7 +3,7 @@ import SectionHeader from "@/components/SectionHeader";
 import ActionRequired from "@/components/student/ActionRequired";
 import CourseProgress from "@/components/student/CourseProgress";
 import UpcomingSection from "@/components/student/UpcomingSection";
-
+import AnnouncementSection from "@/components/student/AnnouncementSection";
 
 export default function StudentDashboard() {
     return (
@@ -30,9 +30,9 @@ export default function StudentDashboard() {
                     <CourseProgress />
                 </div>
 
-                <div className="md:col-span-3">
-                    {/* Upcoming Section */}
+                <div className="md:col-span-3 flex flex-col gap-4">
                     <UpcomingSection />
+                    <AnnouncementSection />
                 </div>
 
             </section>

@@ -8,7 +8,7 @@ const SideBar = ({ links }) => {
   const pathname = usePathname();
 
   return (
-    <aside className="bg-black/20 w-64 px-6 py-4 h-screen border-r border-white/20 flex flex-col">
+    <aside className="sticky top-0 self-start bg-black/20 w-64 px-6 py-4 h-screen border-r border-white/20 flex flex-col">
       <div className="flex flex-col gap-12 mt-8">
         <div className="flex gap-4">
           <div className="bg-linear-to-br from-[#7156FF] to-[#9426FC] h-12 w-12 rounded-lg flex items-center justify-center">

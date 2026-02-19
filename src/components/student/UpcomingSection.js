@@ -3,34 +3,44 @@ import ActionItem from "./ActionItem";
 
 const actionItems = [
     {
-        id: "node-final-project",
         title: "Node.js Final Project",
         subtitle: "Node.js Backend",
         intent: "warning",
     },
     {
-        id: "Database Schema Assignment",
         title: "Database Schema Assignment",
         subtitle: "Database Design",
         intent: "danger",
     },
     {
-        id: "react-workshop",
         title: "React ALAB320H1.1",
         subtitle: "React Development",
         intent: "info",
+    }, {
+        title: "Database Schema Assignment",
+        subtitle: "Database Design",
+        intent: "danger",
+    }, {
+        title: "React ALAB320H1.1",
+        subtitle: "React Development",
+        intent: "info",
+    }, {
+        title: "Database Schema Assignment",
+        subtitle: "Database Design",
+        intent: "danger",
     },
+
 ];
 
 const UpcomingSection = () => {
     return (
-        <GlassCard>
+        <GlassCard className='min-h-90 max-h-90 overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
             <h2 className="font-bold">Upcoming</h2>
 
-            {actionItems.map(item => {
+            {actionItems.map((item, _) => {
                 return (
                     <ActionItem
-                        key={item.id}
+                        key={_}
                         title={item.title}
                         subtitle={item.subtitle}
                         ctaLabel={item.ctaLabel}
