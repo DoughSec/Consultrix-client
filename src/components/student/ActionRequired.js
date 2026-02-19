@@ -1,3 +1,4 @@
+import CardHeader from "../CardHeader";
 import GlassCard from "../GlassCard";
 import ActionItem from "./ActionItem";
 
@@ -27,7 +28,7 @@ const ActionRequired = () => {
     <section className="">
       <GlassCard className="">
         <div className="flex items-center justify-between">
-          <h2 className="font-bold">Action Required</h2>
+          <CardHeader title="Action Required" />
           <LuBadgeInfo size={30} color="yellow" />
         </div>
         {actionItems.map((item) => (

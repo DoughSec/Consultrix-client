@@ -1,3 +1,4 @@
+import CardHeader from "../CardHeader";
 import GlassCard from "../GlassCard";
 import ActionItem from "./ActionItem";
 
@@ -35,8 +36,7 @@ const actionItems = [
 const UpcomingSection = () => {
     return (
         <GlassCard className='min-h-90 max-h-90 overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
-            <h2 className="font-bold">Upcoming</h2>
-
+            <CardHeader title="Upcoming" />
             {actionItems.map((item, _) => {
                 return (
                     <ActionItem

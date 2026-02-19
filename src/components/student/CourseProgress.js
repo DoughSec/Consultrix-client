@@ -1,3 +1,4 @@
+import CardHeader from "../CardHeader";
 import GlassCard from "../GlassCard";
 import CourseProgressBar from "./CourseProgressBar";
 
@@ -13,8 +14,7 @@ const CourseProgress = () => {
     return (
         <section className="">
             <GlassCard className="">
-                <h2 className="font-bold">Course Progress</h2>
-
+                <CardHeader title="Course Progress" />
                 {courseData.map((item, _) => <CourseProgressBar data={item} key={_} />)}
             </GlassCard>
         </section>

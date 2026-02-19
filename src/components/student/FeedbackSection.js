@@ -1,3 +1,4 @@
+import CardHeader from "../CardHeader"
 import GlassCard from "../GlassCard"
 import FeedBackItem from "./FeedbackItem"
 
@@ -19,8 +20,7 @@ const feedBackData = [
 const FeedBackSection = () => {
     return (
         <GlassCard>
-            <h2 className="font-bold">Recent Feedback</h2>
-
+            <CardHeader title="Recent Feedback" />
 
             {feedBackData.map((item, _) => <FeedBackItem data={item} key={_} />)}
         </GlassCard>
