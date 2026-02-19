@@ -22,7 +22,7 @@ const ActionItem = ({ icon, title, subtitle, ctaLabel, intent = "info" }) => {
   const styles = INTENT_STYLES[intent] || INTENT_STYLES.info;
 
   return (
-    <GlassCard className={`rounded-lg flex justify-center ${styles.container}`}>
+    <GlassCard className={`rounded-lg flex justify-center ${styles.container} min-h-12 max-h-16`}>
       <div className="flex items-center justify-between">
         <div className="text-white flex gap-4 items-center">
           {icon && <span className={`${styles.iconWrapper} p-2 rounded-lg`}>{icon}</span>}

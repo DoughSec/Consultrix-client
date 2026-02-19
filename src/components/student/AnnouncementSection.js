@@ -24,7 +24,7 @@ const announcementData = [
 const AnnouncementSection = () => {
     return (
         <GlassCard className='overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
-            <h2>Announcements</h2>
+            <h2 className="font-bold">Announcements</h2>
             {announcementData.map(item => {
                 return (
                     <ActionItem

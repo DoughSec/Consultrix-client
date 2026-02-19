@@ -4,6 +4,7 @@ import ActionRequired from "@/components/student/ActionRequired";
 import CourseProgress from "@/components/student/CourseProgress";
 import UpcomingSection from "@/components/student/UpcomingSection";
 import AnnouncementSection from "@/components/student/AnnouncementSection";
+import FeedBackSection from "@/components/student/FeedbackSection";
 
 export default function StudentDashboard() {
     return (
@@ -17,8 +18,8 @@ export default function StudentDashboard() {
 
             <section className="grid grid-cols-1 gap-4 md:grid-cols-8">
 
-                {/* quick stats sections */}
                 <div className="md:col-span-8">
+                    {/* quick stats sections */}
                     <StatsCardList />
                 </div>
 
@@ -28,6 +29,9 @@ export default function StudentDashboard() {
 
                     {/* Course Progress section */}
                     <CourseProgress />
+
+                    {/* Feeback section */}
+                    <FeedBackSection />
                 </div>
 
                 <div className="md:col-span-3 flex flex-col gap-4">
