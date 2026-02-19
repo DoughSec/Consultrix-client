@@ -49,7 +49,7 @@ const links = [
 
 export default function StudentLayout({ children }) {
   return (
-    <div className="flex">
+    <div className="flex bg-black text-white">
       <SideBar links={links} />
       <main className="p-12 w-full">{children}</main>
     </div>

@@ -1,4 +1,4 @@
-import GlassCard from "./GlassCard";
+import GlassCard from "@/components/GlassCard";
 
 const INTENT_STYLES = {
   warning: {
@@ -25,13 +25,13 @@ const ActionItem = ({ icon, title, subtitle, ctaLabel, intent = "info" }) => {
     <GlassCard className={`rounded-lg flex justify-center ${styles.container}`}>
       <div className="flex items-center justify-between">
         <div className="text-white flex gap-4 items-center">
-          <span className={`${styles.iconWrapper} p-2 rounded-lg`}>{icon}</span>
+          {icon && <span className={`${styles.iconWrapper} p-2 rounded-lg`}>{icon}</span>}
           <div className="flex flex-col">
             <h3 className="text-sm">{title}</h3>
             <span className="text-xs text-gray-500">{subtitle}</span>
           </div>
         </div>
-        <button className={`${styles.button} px-2 rounded-xl`}>{ctaLabel}</button>
+        {ctaLabel && <button className={`${styles.button} px-2 rounded-xl`}>{ctaLabel}</button>}
       </div>
     </GlassCard>
   );

@@ -20,7 +20,7 @@ const SideBar = ({ links }) => {
           </div>
         </div>
         <div className="h-px -mx-6 bg-white/20" />
-        <ul className="flex flex-col gap-10">
+        <ul className="flex flex-col gap-4">
           {links.map((item) => {
             const isActive = pathname === item.href;
 
@@ -29,9 +29,8 @@ const SideBar = ({ links }) => {
                 <Link
                   href={item.href}
                   aria-current={isActive ? "page" : undefined}
-                  className={`flex items-center gap-4 p-2 rounded-lg hover:bg-blue-500/30 ${
-                    isActive ? "bg-blue-500" : ""
-                  }`}
+                  className={`flex items-center gap-4 p-2 rounded-lg hover:bg-blue-500/30 ${isActive ? "bg-blue-500" : ""
+                    }`}
                 >
                   {item.icon}
                   {item.name}
